@@ -28,6 +28,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import paradigm.killerkrow.paradigm.item.ModCreativeModeTabs;
 import paradigm.killerkrow.paradigm.item.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -65,6 +66,8 @@ public class Paradigm {
     public Paradigm() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -101,8 +104,10 @@ public class Paradigm {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModItems.ASTRAVEN);
+            event.accept(ModItems.ASTRAVEN_LEAF);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

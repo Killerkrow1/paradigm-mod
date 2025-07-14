@@ -11,9 +11,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Paradigm.MODID);
 
-
     public static final RegistryObject<Item> ASTRAVEN = ITEMS.register("astraven",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASTRAVEN_LEAF = ITEMS.register("astraven_leaf",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
