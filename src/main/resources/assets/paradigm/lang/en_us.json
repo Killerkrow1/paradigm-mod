@@ -1,6 +1,20 @@
 {
+  //items
   "item.paradigm.astraven": "Astraven Leaf",
   "item.paradigm.astraven_leaf": "Astraven Leaf2",
+  //blocks
 
-  "creativetab.paradigm_tab": "Paradigm Tab"
+  //weapons
+
+  //misc
+
+  //tabs
+  "creativetab.paradigm_tab": "Paradigm Tab",
+  "creativetab.afterlife_tab": "Afterlife Tab",
+  "creativetab.gilden_tab": "Gilden Tab",
+  "creativetab.mask_tab": "Mask Tab",
+  "creativetab.paradigm_cooking_tab": "Paradigm Cooking",
+  "creativetab.plushie_tab": "Plushie Tab",
+  "creativetab.soul_items_tab": "Soul Items Tab",
+  "creativetab.wip_tab": "WIP Tab"
 }
