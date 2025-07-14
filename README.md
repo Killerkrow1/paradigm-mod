@@ -1,5 +1,5 @@
 <div align="center".
-# Paradigm Mod
+  <h1>Paradigm Mod</h1>
 
 <a href="https://www.ko-fi.com/killerkrow"><img alt="kofi-singular-alt" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/kofi-singular-alt_64h.png"></a>
 <a href="https://discord.gg/cZ3nvbByAR"><img alt="discord-plural" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_64h.png"></a>
