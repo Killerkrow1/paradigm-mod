@@ -20,7 +20,11 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Paradigm.MODID);
 
     public static final RegistryObject<Block> VOYD_LIGHT = registerBlock("voyd_light",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.WOOL)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> VOYD_DARKNESS = registerBlock("voyd_darkness",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> CASTIEL_SOUL_LANTERN = registerBlock("castiel_soul_lantern",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).sound(SoundType.LANTERN)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

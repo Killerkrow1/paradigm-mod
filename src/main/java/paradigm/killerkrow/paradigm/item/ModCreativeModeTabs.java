@@ -20,8 +20,15 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModItems.ASTRAVEN_LEAF.get());
+                        output.accept(ModItems.TICKET.get());
+                        output.accept(ModItems.MARRIAGE_RING.get());
+                        output.accept(ModItems.IMPERIUM_INGOT.get());
+                        output.accept(ModItems.DEMIGODS_EFFIGY.get());
+                        output.accept(ModItems.GODS_EFFIGY.get());
+                        output.accept(ModItems.DOG_TRAINER.get());
 
                         output.accept(ModBlocks.VOYD_LIGHT.get());
+                        output.accept(ModBlocks.VOYD_DARKNESS.get());
                     })
                     .build());
 
@@ -37,23 +44,24 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SMILE_ITEM.get()))
                     .title(Component.translatable("creativetab.afterlife_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ASTRAVEN_LEAF.get());
+                        output.accept(ModItems.SMILEY_NOTES.get());
                     })
                     .build());
 
     public static final RegistryObject<CreativeModeTab> Gilden_TAB = CREATIVE_MODE_TABS.register("gilden_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ASTRAVEN_LEAF.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GILDEN_INGOT.get()))
                     .title(Component.translatable("creativetab.gilden_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ASTRAVEN_LEAF.get());
+                        output.accept(ModItems.GILDEN_ORE.get());
+                        output.accept(ModItems.GILDEN_INGOT.get());
                     })
                     .build());
 
     public static final RegistryObject<CreativeModeTab> Mask_TAB = CREATIVE_MODE_TABS.register("mask_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ASTRAVEN_LEAF.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MASK_OF_UNKNOWN_ITEM.get()))
                     .title(Component.translatable("creativetab.mask_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ASTRAVEN_LEAF.get());
+                        output.accept(ModItems.MASK_OF_UNKNOWN_ITEM.get());
                     })
                     .build());
 
@@ -67,17 +75,19 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> Plushie_TAB = CREATIVE_MODE_TABS.register("plushie_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ASTRAVEN_LEAF.get()))
-                    .title(Component.translatable("creativetab.plushie_cooking_tab"))
+                    .title(Component.translatable("creativetab.plushie_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ASTRAVEN_LEAF.get());
                     })
                     .build());
 
     public static final RegistryObject<CreativeModeTab> Soul_Items_TAB = CREATIVE_MODE_TABS.register("soul_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ASTRAVEN_LEAF.get()))
-                    .title(Component.translatable("creativetab.soul_items_cooking_tab"))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SOUL_ITEM.get()))
+                    .title(Component.translatable("creativetab.soul_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ASTRAVEN_LEAF.get());
+                        output.accept(ModItems.SOUL_ITEM.get());
+                        output.accept(ModItems.SOUL_EXTRACTOR.get());
+                        output.accept(ModBlocks.CASTIEL_SOUL_LANTERN.get());
                     })
                     .build());
 

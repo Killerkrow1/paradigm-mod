@@ -1,8 +1,21 @@
 {
-  "item.paradigm.astraven": "Astraven Leaf",
-  "item.paradigm.astraven_leaf": "Astraven Leaf2",
+  "item.paradigm.astraven_leaf": "Astraven Leaf",
+  "item.paradigm.soul_item": "Soul Item",
+  "item.paradigm.smiley_notes": "Smiley Notes",
+  "item.paradigm.gilden_ingot": "Gilden Ingot",
+  "item.paradigm.gilden_ore": "Gilden Ore",
+  "item.paradigm.mask_of_unknown_item": "Mask of Unknown Item",
+  "item.paradigm.ticket": "Ticket",
+  "item.paradigm.marriage_ring": "Marriage Ring",
+  "item.paradigm.imperium_ingot": "Imperium Ingot",
+  "item.paradigm.gods_effigy": "God's Effigy",
+  "item.paradigm.demigods_effigy": "Demi-God's Effigy",
+  "item.paradigm.dog_trainer": "Dog's Trainer",
+  "item.paradigm.soul_extractor": "Soul Extractor",
 
   "block.paradigm.voyd_light": "Voyd Light",
+  "block.paradigm.voyd_darkness": "Voyd Darkness",
+  "block.paradigm.castiel_soul_lantern": "Castiel's Soul Lantern",
 
   "creativetab.paradigm_tab": "Paradigm Tab",
   "creativetab.afterlife_tab": "Afterlife Tab",
