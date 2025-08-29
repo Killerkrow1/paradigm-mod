@@ -17,7 +17,7 @@ issueTrackerURL="https://github.com/Killerkrow1/paradigm-mod/issues" #optional
 # The modid of the mod
 modId = "paradigm" #mandatory
 # The version number of the mod
-version = "1.1.0" #mandatory
+version = "2.0" #mandatory
 # A display name for the mod
 displayName = "Paradigm Mod" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
@@ -39,7 +39,7 @@ authors = "Killerkrow - Dev, 8BitGunner, Corry_Boo, & HopzTheGreat - Artists" #o
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description = '''This is the custom Paradigm Smp Mod #1. Now completely rewritten and in v1.1.X'''
+description = '''This is the custom Paradigm Smp Mod #1. Now completely rewritten and in v2.X'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies."${mod_id}"]] #optional
 # the modid of the dependency

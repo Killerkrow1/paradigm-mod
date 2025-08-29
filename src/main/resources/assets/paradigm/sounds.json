@@ -1,0 +1,83 @@
+{
+  "itp_instrumental": {
+    "subtitle": "subtitles.itp_instrumental",
+    "sounds": [
+      {
+        "name": "paradigm:itp-instrumental",
+        "stream": true
+      }
+    ]
+  },
+  "gilden.break": {
+    "subtitle": "subtitles.gilden.break",
+    "sounds": [
+      {
+        "name": "paradigm:ultimusblocks_-_break_block",
+        "stream": false
+      }
+    ]
+  },
+  "gilden.fall": {
+    "subtitle": "subtitles.gilden.fall",
+    "sounds": [
+      {
+        "name": "paradigm:ultimusblocks_-_fall_on_block",
+        "stream": false
+      }
+    ]
+  },
+  "gilden.hit": {
+    "subtitle": "subtitles.gilden.hit",
+    "sounds": [
+      {
+        "name": "paradigm:ultimusblocks_-_hit_block",
+        "stream": false
+      }
+    ]
+  },
+  "gilden.place": {
+    "subtitle": "subtitles.gilden.place",
+    "sounds": [
+      {
+        "name": "paradigm:ultimusblocks_-_place_block",
+        "stream": false
+      }
+    ]
+  },
+  "gilden.step": {
+    "subtitle": "subtitles.gilden.step",
+    "sounds": [
+      {
+        "name": "paradigm:ultimusblocks_-_step_on_block1",
+        "stream": false
+      }
+    ]
+  },
+  "squeak_sound": {
+    "subtitle": "subtitles.squeak_sound",
+    "sounds": [
+      {
+        "name": "paradigm:squeak_sound",
+        "stream": false
+      }
+    ]
+  },
+  "afterlife_sound": {
+    "subtitle": "subtitles.afterlife_sound",
+    "sounds": [
+      {
+        "name": "paradigm:dead_sound",
+        "stream": false
+      }
+    ]
+  },
+  "dog_clicker_sound": {
+    "subtitle": "subtitles.dog_clicker_sound",
+    "sounds": [
+      {
+        "name": "paradigm:dog_clicker_sound",
+        "stream": false
+      }
+    ]
+  }
+}
