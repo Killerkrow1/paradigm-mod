@@ -2,6 +2,8 @@ package paradigm.killerkrow.paradigm;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -29,6 +31,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import paradigm.killerkrow.paradigm.block.ModBlocks;
+import paradigm.killerkrow.paradigm.fluid.ModFluidTypes;
+import paradigm.killerkrow.paradigm.fluid.ModFluids;
 import paradigm.killerkrow.paradigm.item.ModCreativeModeTabs;
 import paradigm.killerkrow.paradigm.item.ModItems;
 
@@ -80,6 +84,11 @@ public class Paradigm {
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
+        //Even more fluid stuff I think
+        ModFluids.register(modEventBus);
+        // Fluid stuff I think
+        ModFluidTypes.register(modEventBus);
+
 
 
         // Register ourselves for server and other game events we are interested in
@@ -124,9 +133,12 @@ public class Paradigm {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_DEAD_WATER.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_DEAD_WATER.get(), RenderType.translucent());
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
+
     }
 }

@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import paradigm.killerkrow.paradigm.Paradigm;
+import paradigm.killerkrow.paradigm.fluid.ModFluids;
 import paradigm.killerkrow.paradigm.item.ModItems;
 
 import java.util.function.Supplier;
@@ -25,6 +27,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.WOOL)));
     public static final RegistryObject<Block> CASTIEL_SOUL_LANTERN = registerBlock("castiel_soul_lantern",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).sound(SoundType.LANTERN)));
+
+    public static final RegistryObject<LiquidBlock> DEAD_WATER_BLOCK = BLOCKS.register("dead_water_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_DEAD_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

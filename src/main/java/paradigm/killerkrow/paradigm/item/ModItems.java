@@ -1,11 +1,14 @@
 package paradigm.killerkrow.paradigm.item;
 
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import paradigm.killerkrow.paradigm.Paradigm;
+import paradigm.killerkrow.paradigm.fluid.ModFluids;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -41,6 +44,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DOG_TRAINER = ITEMS.register("dog_trainer",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DEAD_WATER_BUCKET = ITEMS.register("dead_water_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_DEAD_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
 
 
     public static void register(IEventBus eventBus) {
