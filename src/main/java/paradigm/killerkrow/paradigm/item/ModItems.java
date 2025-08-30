@@ -9,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import paradigm.killerkrow.paradigm.Paradigm;
 import paradigm.killerkrow.paradigm.fluid.ModFluids;
+import paradigm.killerkrow.paradigm.fluid.VoydFluids;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -48,7 +49,7 @@ public class ModItems {
     public static final RegistryObject<Item> DEAD_WATER_BUCKET = ITEMS.register("dead_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_DEAD_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> VOYD_ESSENCE_BUCKET = ITEMS.register("voyd_essence_bucket",
-            () -> new BucketItem(ModFluids.SOURCE_VOYD_ESSENCE_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+            () -> new BucketItem(VoydFluids.SOURCE_VOYD_ESSENCE_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
 
 

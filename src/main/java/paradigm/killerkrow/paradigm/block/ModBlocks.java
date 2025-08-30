@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import paradigm.killerkrow.paradigm.Paradigm;
 import paradigm.killerkrow.paradigm.fluid.ModFluids;
+import paradigm.killerkrow.paradigm.fluid.VoydFluids;
 import paradigm.killerkrow.paradigm.item.ModItems;
 
 import java.util.function.Supplier;
@@ -31,7 +32,7 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> DEAD_WATER_BLOCK = BLOCKS.register("dead_water_block",
             () -> new LiquidBlock(ModFluids.SOURCE_DEAD_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
     public static final RegistryObject<LiquidBlock> VOYD_ESSENCE_BLOCK = BLOCKS.register("voyd_essence_block",
-            () -> new LiquidBlock(ModFluids.SOURCE_VOYD_ESSENCE_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
+            () -> new LiquidBlock(VoydFluids.SOURCE_VOYD_ESSENCE_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
