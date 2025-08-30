@@ -30,6 +30,8 @@ public class ModBlocks {
 
     public static final RegistryObject<LiquidBlock> DEAD_WATER_BLOCK = BLOCKS.register("dead_water_block",
             () -> new LiquidBlock(ModFluids.SOURCE_DEAD_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
+    public static final RegistryObject<LiquidBlock> VOYD_ESSENCE_BLOCK = BLOCKS.register("voyd_essence_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_VOYD_ESSENCE_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

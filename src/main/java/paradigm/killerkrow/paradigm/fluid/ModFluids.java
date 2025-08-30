@@ -15,6 +15,7 @@ public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(ForgeRegistries.FLUIDS, Paradigm.MODID);
 
+    //Dead Water stuff
     public static final RegistryObject<FlowingFluid> SOURCE_DEAD_WATER = FLUIDS.register("dead_water_fluid",
             () -> new ForgeFlowingFluid.Source(ModFluids.DEAD_WATER_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_DEAD_WATER = FLUIDS.register("flowing_dead_water",
@@ -24,6 +25,17 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties DEAD_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.DEAD_WATER_FLUID_TYPE, SOURCE_DEAD_WATER, FLOWING_DEAD_WATER)
             .slopeFindDistance(2).levelDecreasePerBlock(1).tickRate(25).block(ModBlocks.DEAD_WATER_BLOCK).bucket(ModItems.DEAD_WATER_BUCKET);
+
+    //Voyd Essence stuff
+    public static final RegistryObject<FlowingFluid> SOURCE_VOYD_ESSENCE_WATER = FLUIDS.register("dead_voyd_essence_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.VOYD_ESSENCE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_VOYD_ESSENCE_WATER = FLUIDS.register("flowing_voyd_essence_water",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.VOYD_ESSENCE_FLUID_PROPERTIES));
+
+
+    public static final ForgeFlowingFluid.Properties VOYD_ESSENCE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.VOYD_ESSENCE_FLUID_TYPE, SOURCE_VOYD_ESSENCE_WATER, FLOWING_VOYD_ESSENCE_WATER)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).tickRate(25).block(ModBlocks.VOYD_ESSENCE_BLOCK).bucket(ModItems.VOYD_ESSENCE_BUCKET);
 
 
     public static void register(IEventBus eventBus) {

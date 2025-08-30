@@ -12,14 +12,18 @@ import org.joml.Vector3f;
 import paradigm.killerkrow.paradigm.Paradigm;
 
 public class ModFluidTypes {
-    public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/water_still");
-    public static final ResourceLocation WATER_FLOWING_RL = new ResourceLocation("block/water_flow");
-    public static final ResourceLocation SOAP_OVERLAY_RL = new ResourceLocation(Paradigm.MODID, "misc/in_soap_water");
+    public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("fluid/dead_water");
+    public static final ResourceLocation WATER_FLOWING_RL = new ResourceLocation("fluid/dead_water");
+    public static final ResourceLocation SOAP_OVERLAY_RL = new ResourceLocation(Paradigm.MODID, "fluid/dead_water");
 
     public static final DeferredRegister<FluidType> FLUID_TYPES =
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, Paradigm.MODID);
 
-    public static final RegistryObject<FluidType> DEAD_WATER_FLUID_TYPE = register("dead_watter_fluid",
+    public static final RegistryObject<FluidType> DEAD_WATER_FLUID_TYPE = register("dead_water_fluid",
+            FluidType.Properties.create().lightLevel(0).density(1400).viscosity(2000).sound(SoundAction.get("drink"),
+                    SoundEvents.HONEY_DRINK));
+
+    public static final RegistryObject<FluidType> VOYD_ESSENCE_FLUID_TYPE = register("voyd_assense_fluid",
             FluidType.Properties.create().lightLevel(0).density(1400).viscosity(2000).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK));
 

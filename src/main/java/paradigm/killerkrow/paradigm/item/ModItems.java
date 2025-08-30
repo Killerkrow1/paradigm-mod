@@ -47,6 +47,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DEAD_WATER_BUCKET = ITEMS.register("dead_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_DEAD_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> VOYD_ESSENCE_BUCKET = ITEMS.register("voyd_essence_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_VOYD_ESSENCE_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
 
 
