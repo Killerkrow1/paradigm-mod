@@ -26,6 +26,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DEMIGODS_EFFIGY.get());
                         output.accept(ModItems.GODS_EFFIGY.get());
                         output.accept(ModItems.DOG_TRAINER.get());
+                        output.accept(ModItems.DEAD_WATER_BUCKET.get());
+                        output.accept(ModItems.VOYD_ESSENCE_BUCKET.get());
+                        output.accept(ModItems.GERO_FAVOR.get());
+                        output.accept(ModItems.ASTRAL_FAVOR.get());
+                        output.accept(ModItems.ATLAS_FAVOR.get());
+                        output.accept(ModItems.NOVINGARD_FAVOR.get());
 
                         output.accept(ModBlocks.VOYD_LIGHT.get());
                         output.accept(ModBlocks.VOYD_DARKNESS.get());

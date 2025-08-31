@@ -20,7 +20,7 @@ public class VoydEssenceFluid {
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, Paradigm.MODID);
 
     public static final RegistryObject<FluidType> VOYD_ESSENCE_FLUID_TYPE = register("voyd_essence_fluid",
-            FluidType.Properties.create().lightLevel(0).density(1400).viscosity(2000).sound(SoundAction.get("drink"),
+            FluidType.Properties.create().motionScale(10).lightLevel(0).density(1400).viscosity(2000).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK));
 
 

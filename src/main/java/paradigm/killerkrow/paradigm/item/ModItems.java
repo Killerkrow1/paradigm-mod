@@ -10,6 +10,8 @@ import net.minecraftforge.registries.RegistryObject;
 import paradigm.killerkrow.paradigm.Paradigm;
 import paradigm.killerkrow.paradigm.fluid.ModFluids;
 import paradigm.killerkrow.paradigm.fluid.VoydFluids;
+import paradigm.killerkrow.paradigm.item.custom.SmileyNotesItem;
+import paradigm.killerkrow.paradigm.item.custom.dog_trainerItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -24,7 +26,7 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_ITEM = ITEMS.register("soul_item",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SMILEY_NOTES = ITEMS.register("smiley_notes",
-            () -> new Item(new Item.Properties()));
+            () -> new SmileyNotesItem(new Item.Properties()));
     public static final RegistryObject<Item> GILDEN_ORE = ITEMS.register("gilden_ore",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GILDEN_INGOT = ITEMS.register("gilden_ingot",
@@ -44,6 +46,14 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_EXTRACTOR = ITEMS.register("soul_extractor",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DOG_TRAINER = ITEMS.register("dog_trainer",
+            () -> new dog_trainerItem(new Item.Properties()));
+    public static final RegistryObject<Item> GERO_FAVOR = ITEMS.register("gero_favor",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASTRAL_FAVOR = ITEMS.register("astral_favor",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ATLAS_FAVOR = ITEMS.register("atlas_favor",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NOVINGARD_FAVOR = ITEMS.register("novingard_favor",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> DEAD_WATER_BUCKET = ITEMS.register("dead_water_bucket",

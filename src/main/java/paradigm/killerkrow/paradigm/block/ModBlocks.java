@@ -27,7 +27,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> VOYD_DARKNESS = registerBlock("voyd_darkness",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.WOOL)));
     public static final RegistryObject<Block> CASTIEL_SOUL_LANTERN = registerBlock("castiel_soul_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).sound(SoundType.LANTERN)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).requiresCorrectToolForDrops().sound(SoundType.LANTERN)));
 
     public static final RegistryObject<LiquidBlock> DEAD_WATER_BLOCK = BLOCKS.register("dead_water_block",
             () -> new LiquidBlock(ModFluids.SOURCE_DEAD_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
