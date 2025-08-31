@@ -10,6 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 import paradigm.killerkrow.paradigm.Paradigm;
 import paradigm.killerkrow.paradigm.fluid.ModFluids;
 import paradigm.killerkrow.paradigm.fluid.VoydFluids;
+import paradigm.killerkrow.paradigm.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -24,7 +25,7 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_ITEM = ITEMS.register("soul_item",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SMILEY_NOTES = ITEMS.register("smiley_notes",
-            () -> new Item(new Item.Properties()));
+            () -> new SmileyNotesItem(new Item.Properties()));
     public static final RegistryObject<Item> GILDEN_ORE = ITEMS.register("gilden_ore",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GILDEN_INGOT = ITEMS.register("gilden_ingot",
@@ -43,8 +44,28 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SOUL_EXTRACTOR = ITEMS.register("soul_extractor",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DOG_TRAINER = ITEMS.register("dog_trainer",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GERO_FAVOR = ITEMS.register("gero_favor",
+            () -> new GeroFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> ASTRAL_FAVOR = ITEMS.register("astral_favor",
+            () -> new AstralFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> ATLAS_FAVOR = ITEMS.register("atlas_favor",
+            () -> new AtlasFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> NOVINGARD_FAVOR = ITEMS.register("novingard_favor",
+            () -> new NovingardFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> VELEN_FAVOR = ITEMS.register("velen_favor",
+            () -> new VelenFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> GABRIEL_FAVOR = ITEMS.register("gabriel_favor",
+            () -> new GabrielFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> TOGG_FAVOR = ITEMS.register("togg_favor",
+            () -> new ToggFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> PUMPKIN_FAVOR = ITEMS.register("pumpkin_favor",
+            () -> new PumpkinFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> UNKNOWN_FAVOR = ITEMS.register("unknown_favor",
+            () -> new UnknownFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> ULTIMUS_FAVOR = ITEMS.register("ultimus_favor",
+            () -> new UltimusFavorItem(new Item.Properties()));
+    public static final RegistryObject<Item> ISMENE_FAVOR = ITEMS.register("ismene_favor",
+            () -> new IsmeneFavorItem(new Item.Properties()));
 
     public static final RegistryObject<Item> DEAD_WATER_BUCKET = ITEMS.register("dead_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_DEAD_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

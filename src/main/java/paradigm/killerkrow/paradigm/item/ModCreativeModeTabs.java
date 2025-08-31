@@ -25,7 +25,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.IMPERIUM_INGOT.get());
                         output.accept(ModItems.DEMIGODS_EFFIGY.get());
                         output.accept(ModItems.GODS_EFFIGY.get());
-                        output.accept(ModItems.DOG_TRAINER.get());
+                        output.accept(ModItems.DEAD_WATER_BUCKET.get());
+                        output.accept(ModItems.VOYD_ESSENCE_BUCKET.get());
+                        output.accept(ModItems.ATLAS_FAVOR.get());
+                        output.accept(ModItems.NOVINGARD_FAVOR.get());
+                        output.accept(ModItems.ASTRAL_FAVOR.get());
+                        output.accept(ModItems.GERO_FAVOR.get());
+                        output.accept(ModItems.ISMENE_FAVOR.get());
+                        output.accept(ModItems.ULTIMUS_FAVOR.get());
+                        output.accept(ModItems.UNKNOWN_FAVOR.get());
+                        output.accept(ModItems.PUMPKIN_FAVOR.get());
+                        output.accept(ModItems.GABRIEL_FAVOR.get());
+                        output.accept(ModItems.VELEN_FAVOR.get());
+                        output.accept(ModItems.TOGG_FAVOR.get());
 
                         output.accept(ModBlocks.VOYD_LIGHT.get());
                         output.accept(ModBlocks.VOYD_DARKNESS.get());
@@ -87,7 +99,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SOUL_ITEM.get());
                         output.accept(ModItems.SOUL_EXTRACTOR.get());
-                        output.accept(ModBlocks.CASTIEL_SOUL_LANTERN.get());
+                        output.accept(ModBlocks.SOUL_LANTERN.get());
                     })
                     .build());
 
