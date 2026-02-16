@@ -23,7 +23,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TICKET.get());
                         output.accept(ModItems.MARRIAGE_RING.get());
                         output.accept(ModItems.IMPERIUM_INGOT.get());
+                        output.accept(ModItems.EMPTY_EFFIGY.get());
                         output.accept(ModItems.DEMIGODS_EFFIGY.get());
+                        output.accept(ModItems.AFTERLIFE_EFFIGY.get());
                         output.accept(ModItems.GODS_EFFIGY.get());
                         output.accept(ModItems.DEAD_WATER_BUCKET.get());
                         output.accept(ModItems.VOYD_ESSENCE_BUCKET.get());
@@ -35,20 +37,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ULTIMUS_FAVOR.get());
                         output.accept(ModItems.UNKNOWN_FAVOR.get());
                         output.accept(ModItems.PUMPKIN_FAVOR.get());
-                        output.accept(ModItems.GABRIEL_FAVOR.get());
                         output.accept(ModItems.VELEN_FAVOR.get());
                         output.accept(ModItems.TOGG_FAVOR.get());
+                        output.accept(ModItems.WEEPING_AMBROSIA.get());
 
                         output.accept(ModBlocks.VOYD_LIGHT.get());
                         output.accept(ModBlocks.VOYD_DARKNESS.get());
-                    })
-                    .build());
-
-    public static final RegistryObject<CreativeModeTab> Disc_TAB = CREATIVE_MODE_TABS.register("disc_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ASTRAVEN_LEAF.get()))
-                    .title(Component.translatable("creativetab.disc_tab"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ASTRAVEN_LEAF.get());
+                        output.accept(ModBlocks.PINE_HANGING_SIGN.get());
+                        output.accept(ModBlocks.PINE_SIGN.get());
+                        output.accept(ModBlocks.PINE_PLANKS.get());
                     })
                     .build());
 

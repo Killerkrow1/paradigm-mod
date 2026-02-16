@@ -24,6 +24,9 @@
   "item.paradigm.unknown_favor": "(Unknown)'s Favor",
   "item.paradigm.ultimus_favor": "Ultimus' Favor",
   "item.paradigm.ismene_favor": "Ismene's Favor",
+  "item.paradigm.weeping_ambrosia": "Weeping Ambrosia",
+  "item.paradigm.empty_effigy": "Empty Effigy",
+  "item.paradigm.afterlife_effigy": "Afterlife Effigy",
 
   "block.paradigm.voyd_light": "Voyd Light",
   "block.paradigm.voyd_darkness": "Voyd Darkness",
@@ -37,5 +40,10 @@
   "creativetab.plushie_tab": "Plushie Tab",
   "creativetab.soul_items_tab": "Soul Items Tab",
   "creativetab.wip_tab": "WIP Tab",
-  "creativetab.disc_tab": "Disc Tab"
+
+  "tooltip.paradigm.smiley_notes.tooltip": "§7§oMystical knowledge from other worlds flows through these papers",
+  "tooltip.paradigm.gods_effigy.tooltip": "§7§oA Mystical Tool that fills your body with power, lifts your spirit, and supplies the holder with the courage needed to survive.",
+  "tooltip.paradigm.demigods_effigy.tooltip": "§7§oA Cursed Tool. Whoever holds this is cursed so long asthey keep hold of it.",
+  "tooltip.paradigm.afterlife_effigy.tooltip": "§7§oA Strange Tool filled with foreign powers. Holding this makes you aware.",
+  "tooltip.paradigm.empty_effigy.tooltip": "§7§oEmpty... the starting step to a greater tool."
 }
