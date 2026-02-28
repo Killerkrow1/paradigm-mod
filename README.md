@@ -6,3 +6,4 @@
 
 </div>
 
+This version of the mod is no longer being updated, instead a new private Fabric Version is being updated
